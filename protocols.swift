@@ -9,7 +9,7 @@ protocol Vehicle {
 }
 
 struct Car : Vehicle { 
-  // if multile protocols and , after one another and implement the func from the protocols 
+//if multile protocols and , after one another and implement the func from the protocols 
   let name = "Blue car"
   //let currentPassNumber = 20
   func esTime (for distance: Int ) -> Int 
