@@ -22,3 +22,27 @@ let red = Album(title:"Red", artist: "Lxion Atlas")
 
 print(red.title)
 red.printSum()
+
+//another example 
+struct Employee {
+  let name : String 
+  var vacationAllowed = 3
+  var vacationTaken = 0
+
+  var vacationRemaining : Int 
+  {
+    get{
+      vacationAllowed - vacationTaken
+    }
+    set{
+      vacationAllowed = vacationTaken + newValue
+    }
+    
+  }
+}
+// print(Employee.vacationAllowed)
+let user = Employee(name: "Atlas",vacationTaken: 1)
+
+let vacationLeft = user.vacationRemaining
+
+print("Vacation left: \(user.vacationRemaining)")
