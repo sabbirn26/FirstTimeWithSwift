@@ -43,7 +43,7 @@ func mulTwoNumbers(number1:Int,number2:Int) -> Int {
 }
 print("Result of double perameter mul fuction",mulTwoNumbers(number1:10,number2:4))
 
-//multiple perameter mul fuction but diff
+//multiple perameter mul fuction but diff _ means no perameter needed to pass a value to this function!
 func mulTwoNumbers(_ number1:Int,_ number2:Int) -> Int {
 
   let a = number1
