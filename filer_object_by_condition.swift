@@ -1,3 +1,4 @@
+import Foundation
 struct User {
     let first: String
     let last: String
@@ -15,27 +16,5 @@ let users: [User] = [
     User(first: "Envy", last: "Williams",age:12)
 ]
 
-//filter
-let resultFilter = users.filter({$0.age > 29})
-print("User age more than 29: \(resultFilter)")
-
-//map
-let resultMap = users.map ({$0.age * 2 } )
-print("After adding 5 years to age: \(resultMap)")
-
-//reduce
-let resultReduce = resultMap.reduce(0,+)
-
-print("Sum of the ages after map: \(resultReduce)")
-
-//contains
-var resultContains = resultMap.contains(104)
-
-print("The resultMap contains 104: \(resultContains)")
-
-//reverse()
-var prime = [2, 3, 5, 7]
-// reverse the order of array elements
-prime.reverse()
-
-print(prime)
+let result = users.filter ({  $0.first.lowercased().hasPrefix("r") && ($0.age >= 30 )} )
+print(result)
