@@ -1,6 +1,6 @@
 import Foundation
 
-var arr = ["Java","Python","Red","Blue","Green","Purple","Black"]
+var arr =["Java","Python","Red","Blue","Green","Purple","Black"]
 print("Actual array:\(arr)")
 
 //let's drop last element 
