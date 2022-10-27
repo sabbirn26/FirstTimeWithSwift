@@ -11,4 +11,5 @@ print("After insert array: \(arr)")
 arr.insert("Start", at: arr.startIndex)
 print("After inserting at 0th index:\n\(arr)")
 
-arr.insert("End", at: arr.lastIndex)
+arr.insert("Last", at: arr.endIndex)
+print("After inserting at last index:\(arr)")
