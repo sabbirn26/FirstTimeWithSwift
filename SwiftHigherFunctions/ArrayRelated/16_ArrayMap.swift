@@ -5,11 +5,11 @@ print("Actual array: \(arr)")
 
 //Array map
 var result = arr.map({ $0 + 2}) //result(array) storing modified value by adding 2 for each elements
-print("Filtered array: \(result)")
+print("Mapped array: \(result)")
 
 var arr1 = ["Java","Python","Red","Blue","Green","Purple","Black","Pink"]
 print("Orginal array: \(arr1)")
 //Array map
 var result1 = arr1.map { $0.uppercased() }
-print("After filtering: \(result1)")
+print("After maping: \(result1)")
 
