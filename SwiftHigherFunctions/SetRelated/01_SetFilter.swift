@@ -12,4 +12,3 @@ print("\nActual array: \(arr1)")
 
 //after set filtering
 var result1 = arr1.filter({$0.hasPrefix("P")})
-print("Filtered set element that has P as prefix: \(result1)")
